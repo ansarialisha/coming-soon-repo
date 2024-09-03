@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="coming-soon.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="flex-container column" x-data="comingSoonWebComponent()">
+            <div class="display-flex justify-center position-relative parentd-item">
+                <div class="display-flex justify-center position-relative item-0"></div>
+                <div class="item-1 display-flex justify-center align-center">
+                    <img src="./icons/link.png" class="img">  Designknot
+                </div>
+                <div class="display-flex justify-center position-relative item-2"></div>
+            </div>
+            <div class="display-flex justify-center">
+                <img src="./icons/Hand.png" class="hand-img">
+            </div>
+            <div class="display-flex justify-center column align-center">
+                <h3>WE'RE STILL</h3>
+                <h1>Cooking Our Website.</h1>
+                <h2>We are going to launch our website very soon.</h2>
+                <h2>Stay Tuned.</h2>
+            </div>
+            <div class="display-flex justify-center">
+                <button class="button display-flex justify-center align-center position-relative" @click="showForm = true">
+                    <img src="./icons/email.png" class="email-icon position-absolute"> Notify Me > 
+                </button>
+            </div>
+
+            <div x-show="showForm" class="modalForm">
+                <iframe width="540" height="305" src="https://5704779c.sibforms.com/serve/MUIFAFr2hBp0g5-2_1uyEZMoO70bv5SXY4d_pcmHHaqqWFFugINrwEFNK_DyGmhuxKUBuTXgI7imU_OEm4INtg0lwBdLErnwCKYdD_3-vRmRuxIXR3ZGT6QeqSDez5-kD6EuZfM17sCz9YbTemQ8NOALqK6uoayt4moXTT2B6F8mEAcmme4Cshmlv1wL2f7ORXc__2QTXau6cX6V" 
+                frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+                <img src="../image-task/images/close.png" class="position-absolute close-form" @click="showForm = false">
+            </div>
+
+            <div class="display-flex">
+                <img src="./icons/asset.png" class="height-width position-absolute left">
+                <img src="./icons/asset-1.png" class="height-width position-absolute right">
+            </div>
+            <img src="./icons/asset-2.png" class="height-width-1 position-absolute bottom">
+        </div>
+        <script>
+            function comingSoonWebComponent() {
+                return {
+                    showForm: false,
+                }
+            }    
+        </script>   
+    </body>
+</html>
