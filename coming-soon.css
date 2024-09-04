@@ -15,6 +15,7 @@ body{
     border-radius: 50px;
 }
 .item-0{
+    box-shadow: 5px 0 #F0F0F7;
     height: 50px;
     width: 50%;
     background: linear-gradient(130deg,#E4D9F1, #EAD3EC, #EAD3EC, #DEEAFD,#F4F7FF, #F9F9FF );
@@ -22,6 +23,7 @@ body{
     border-top-left-radius: 40px;
 }
 .item-1{
+    box-shadow: 0 10px #F0F0F7;
     height: 80px;
     width: 15em;
     background-color: white;
@@ -31,6 +33,7 @@ body{
     font-weight: 500;
 }
 .item-2{
+    box-shadow: -5px 0px 0px 0px #F0F0F7;
     height: 50px;
     width: 50%;
     background-color: #F9F9FF;
@@ -167,6 +170,9 @@ h2{
     .flex-container{
         width: 90%;
     }
+    .item-0{
+        background: linear-gradient(130deg,#E4D9F1, #EAD3EC,#EAD3EC, #EAD3EC, #DEEAFD,#F4F7FF, #F9F9FF);
+    }
     
 }
 @media (max-width: 768px) {
@@ -208,10 +214,9 @@ h2{
     .item-0 {
         height: 40px;
         width: 50%;
-        margin-right: -1px;
+        margin-right: 2px;
         background: linear-gradient(130deg, #E4D9F1, #EAD3EC, #EAD3EC, #DEEAFD);
         border-top-right-radius: 50px;
-        z-index: 1;
     }
 }
 @media (max-width: 375px) {
@@ -247,7 +252,7 @@ h2{
         width: 55%;
         background: linear-gradient(130deg, #E4D9F1, #EAD3EC, #EAD3EC);
         border-top-right-radius: 50px;
-        z-index: 1;
+        box-shadow: 3px 0 #F0F0F7;
     }
     
 }
